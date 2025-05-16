@@ -1,0 +1,256 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f4f4;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ffadbc; /* Lovely pinkish tone */
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7a85;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Home Section */
+.home {
+    background: url('/441521199_928500335683279_1719588058731765702_n.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ffe3e6;
+}
+.gash{
+    width: 60px;
+    height: 50px;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #ff7a85;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+    background-color: #ff4b5b;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #fff5f5;
+}
+
+.about, .services, .gallery, .contact {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff4b5b;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+    background-color: #fff0f3;
+}
+
+.service {
+    margin: 2rem 0;
+}
+
+.service h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: #ff7a85;
+}
+
+.service p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Gallery Section */
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gallery-items img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-items img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input, .contact textarea {
+    padding: 1rem;
+    border: 2px solid #ff7a85;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 1rem;
+    border: none;
+    background-color: #ff7a85;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ff4b5b;
+}
+
+/* Footer */
+footer {
+    background-color: #ffadbc;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #ffadbc;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .gallery-items {
+        flex-direction: column;
+    }
+}
+.footer-social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    margin-left: 200px;
+
+}
+.footer-social a{
+    font-size: 80px;
+
+}
+.footer-social a:hover{
+    color: #333;
+}
+.fa-facebook-f{
+   
+    color: blue;
+}
+.fa-twitter{
+    color: #14e11e;
+}
+.fa-youtube{
+    color: red;
+}
+.fa-instagram{
+    color: #ffadbc;
+}
+

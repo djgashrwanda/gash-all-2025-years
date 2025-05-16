@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View detailed information about a specific file uploaded on Gash by Gashema Francis (Selector Gash).">
+    <meta name="keywords"
+        content="file details, Gash, Gashema Francis, file management, file metadata, Selector Gash">
+    <meta name="author" content="Gashema Francis, Selector Gash">
+    <title>File Details - Gash</title>
+    <link rel="stylesheet" href="file.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Gash</a>
+    
+            <!-- Hamburger Menu for Mobile -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+            <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dash.html">Dashboard</a></li>
+            <li><a href="file-details.html" class="active">File Details</a></li>
+            <li><a href="upload.html">Upload File</a></li>
+            <li><a href="download.html">Download Files</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- File Details Content -->
+    <div id="file-details" class="container">
+        <section>
+            <h2>File Details</h2>
+            <div class="file-details-card">
+                <img id="file-image" src="" alt="File Image">
+                <div class="file-info">
+                    <p><strong>File Name:</strong> <span id="file-name"></span></p>
+                    <p><strong>Author:</strong> <span id="file-author"></span></p>
+                    <p><strong>Upload Date:</strong> <span id="file-date"></span></p>
+                    <p><strong>Description:</strong> <span id="file-description"></span></p>
+                    <a id="download-link" href="" target="_blank">
+                        <button>Download</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>Developed by <strong>Gashema Francis</strong> (aka <strong>Selector Gash</strong>)</p>
+                <p>&copy; 2025 Gash File Management | All Rights Reserved</p>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/SelectorGash" target="_blank">Twitter</a>
+                <a href="https://github.com/SelectorGash" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="file.js"></script>
+</body>
+
+</html>

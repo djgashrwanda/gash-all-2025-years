@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Download files from Gash platform. Developed by Gashema Francis (Selector Gash).">
+    <meta name="keywords" content="download files, Gash, files, download">
+    <meta name="author" content="Gashema Francis, Selector Gash">
+    <title>Download Files - Gash</title>
+    <link rel="stylesheet" href="download.css">
+    <!-- Add FontAwesome CDN link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+<nav>
+    <div class="container">
+        <a href="index.html" class="logo">Gash</a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dash.html">Dashboard</a></li>
+            <li><a href="file-details.html">File Details</a></li>
+            <li><a href="upload.html">Upload File</a></li>
+            <li><a href="download.html" class="active">Download Files</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Download Section -->
+    <div id="download-section" class="container">
+        <section>
+            <h2>Download Available Files</h2>
+            <p>Search for files or browse the list below to download.</p>
+
+            <!-- Search Bar -->
+            <input type="text" id="search-bar" placeholder="Search files..." onkeyup="searchFiles()" class="search-bar">
+
+            <p id="file-count"></p>
+
+            <div class="file-list" id="file-list">
+                <!-- Files will be dynamically loaded here -->
+
+               
+            </div>
+            <!-- Show More Button -->
+            <div style="text-align: center;">
+                <button id="show-more-button" class="download-button" style="margin-bottom: 20px;">Show More</button>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>Developed by <strong>Gashema Francis</strong> (aka <strong>Selector Gash</strong>)</p>
+                <p>&copy; 2025 Gash File Management | All Rights Reserved</p>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/SelectorGash" target="_blank" title="Follow us on Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/SelectorGash" target="_blank" title="Like us on Facebook"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/SelectorGash" target="_blank" title="Follow us on Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/SelectorGash" target="_blank"
+                    title="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SelectorGash" target="_blank" title="View our GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/c/SelectorGash" target="_blank"
+                    title="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/SelectorGash" target="_blank" title="Join our Telegram channel"><i
+                        class="fab fa-telegram"></i></a>
+                <a href="https://www.pinterest.com/SelectorGash" target="_blank" title="Follow us on Pinterest"><i
+                        class="fab fa-pinterest"></i></a>
+                <a href="https://www.snapchat.com/add/SelectorGash" target="_blank" title="Follow us on Snapchat"><i
+                        class="fab fa-snapchat"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="download.js"></script>
+</body>
+
+</html>

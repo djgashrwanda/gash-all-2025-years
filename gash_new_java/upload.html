@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Upload your files to Gash platform, developed by Gashema Francis (Selector Gash).">
+    <meta name="keywords" content="file upload, Gash, Gashema Francis, file management, Selector Gash">
+    <meta name="author" content="Gashema Francis, Selector Gash">
+    <title>Upload File - Gash</title>
+    <link rel="stylesheet" href="upload.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+
+
+<nav>
+    <div class="container">
+        <a href="index.html" class="logo">Gash</a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dash.html">Dashboard</a></li>
+            <li><a href="file-details.html">File Details</a></li>
+            <li><a href="upload.html" class="active">Upload File</a></li>
+            <li><a href="download.html">Download Files</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Upload Form Content -->
+    <div id="upload" class="container">
+        <section>
+            <h2>Upload Your File</h2>
+            <form id="file-upload-form" enctype="multipart/form-data" action="https://anonsharing.com/">
+                <div class="input-group">
+                    <label for="file-input">Choose a File:</label>
+                    <input type="file" id="file-input" name="file" accept="image/*, .pdf, .doc, .docx, .txt, .zip"
+                        required>
+                </div>
+                <div class="input-group">
+                    <label for="file-name">File Name:</label>
+                    <input type="text" id="file-name" name="file_name" placeholder="Enter file name" required>
+                </div>
+                <div class="input-group">
+                    <label for="file-author">Author:</label>
+                    <input type="text" id="file-author" name="file_author" placeholder="Enter author's name" required>
+                </div>
+                <div class="input-group">
+                    <label for="file-description">Description:</label>
+                    <textarea id="file-description" name="file_description" placeholder="Enter a description" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" id="upload-button">Upload File</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>Developed by <strong>Gashema Francis</strong> (aka <strong>Selector Gash</strong>)</p>
+                <p>&copy; 2025 Gash File Management | All Rights Reserved</p>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/SelectorGash" target="_blank">Twitter</a>
+                <a href="https://github.com/SelectorGash" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dropdown -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <script src="upload.js"></script>
+</body>
+
+</html>
